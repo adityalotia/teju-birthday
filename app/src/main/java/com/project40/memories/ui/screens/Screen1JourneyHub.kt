@@ -405,6 +405,47 @@ private fun ActiveGiftSpotlight(
 
             Spacer(modifier = Modifier.height(10.dp))
 
+            if (countdownSeconds > 0) {
+                val hrs = countdownSeconds / 3600
+                val mins = (countdownSeconds % 3600) / 60
+                val secs = countdownSeconds % 60
+                val countdownFormatted = String.format("%02dh %02dm %02ds", hrs, mins, secs)
+
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .clip(RoundedCornerShape(12.dp))
+                        .background(ChampagneRoseLight.copy(alpha = 0.6f))
+                        .padding(horizontal = 12.dp, vertical = 8.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Icon(
+                            imageVector = Icons.Filled.Schedule,
+                            contentDescription = null,
+                            tint = DustyTerracotta,
+                            modifier = Modifier.size(16.dp)
+                        )
+                        Spacer(modifier = Modifier.width(6.dp))
+                        Text(
+                            text = "Next Surprise Unlocks In",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = InkEspresso,
+                            fontWeight = FontWeight.SemiBold
+                        )
+                    }
+                    Text(
+                        text = countdownFormatted,
+                        style = MaterialTheme.typography.labelLarge,
+                        color = DustyTerracottaDark,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+
+                Spacer(modifier = Modifier.height(10.dp))
+            }
+
             // Teaser detail
             Text(
                 text = if (gift.category == GiftCategory.PHYSICAL)

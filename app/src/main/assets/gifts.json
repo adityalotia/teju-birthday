@@ -35,9 +35,9 @@
   },
   {
     "id": 3,
-    "title": "Solo Cafe Window Pass",
+    "title": "Jhumka gira re",
     "category": "COUPON",
-    "unlockType": "IMMEDIATE",
+    "unlockType": "TIMED",
     "scheduledTime": null,
     "subtitle": "A Quiet Morning For Yourself",
     "description": "Single-origin pour-over, cozy plush window seat, and completely untouched reading hours.",

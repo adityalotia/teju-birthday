@@ -68,13 +68,60 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private fun startCountdownTicker() {
         viewModelScope.launch {
             while (true) {
-                delay(1000)
                 _uiState.update { state ->
-                    val nextSec = if (state.nextUnlockSecondsLeft > 0) state.nextUnlockSecondsLeft - 1 else 0
-                    state.copy(nextUnlockSecondsLeft = nextSec)
+                    val nextGift = state.gifts.firstOrNull { gift -> !state.unlockedGiftIds.contains(gift.id) }
+                    val secondsLeft = calculateSecondsUntil(nextGift?.scheduledTime)
+                    
+                    // Auto-unlock if scheduled time has passed and not in debug mode
+                    if (nextGift != null && nextGift.scheduledTime != null && secondsLeft <= 0 && !state.unlockedGiftIds.contains(nextGift.id)) {
+                        // Time reached!
+                        val updatedUnlocked = state.unlockedGiftIds + nextGift.id
+                        val newNextGift = state.gifts.firstOrNull { gift -> !updatedUnlocked.contains(gift.id) }
+                        state.copy(
+                            unlockedGiftIds = updatedUnlocked,
+                            nextUnlockSecondsLeft = calculateSecondsUntil(newNextGift?.scheduledTime),
+                            confettiTrigger = state.confettiTrigger + 1,
+                            celebrationToastMessage = "🎉 Surprise #${nextGift.id} Time Reached! Unlocked!"
+                        )
+                    } else {
+                        state.copy(nextUnlockSecondsLeft = secondsLeft)
+                    }
                 }
+                delay(1000)
             }
         }
+    }
+
+    private fun calculateSecondsUntil(scheduledTimeStr: String?): Long {
+        if (scheduledTimeStr.isNullOrEmpty()) return 0L
+        return try {
+            val now = java.time.LocalDateTime.now()
+            val timeParts = parseTime(scheduledTimeStr) ?: return 0L
+            
+            // Birthday Target: October 22, 2026
+            val birthdayTarget = java.time.LocalDateTime.of(2026, 10, 22, timeParts.first, timeParts.second)
+            
+            val duration = java.time.Duration.between(now, birthdayTarget)
+            if (duration.isNegative) 0L else duration.seconds
+        } catch (e: Exception) {
+            0L
+        }
+    }
+
+    private fun parseTime(timeStr: String): Pair<Int, Int>? {
+        val clean = timeStr.trim().uppercase()
+        val isPm = clean.contains("PM")
+        val isAm = clean.contains("AM")
+        val digits = clean.replace("AM", "").replace("PM", "").trim()
+        val parts = digits.split(":")
+        if (parts.size < 2) return null
+        
+        var hour = parts[0].toIntOrNull() ?: return null
+        val minute = parts[1].toIntOrNull() ?: return null
+        
+        if (isPm && hour < 12) hour += 12
+        if (isAm && hour == 12) hour = 0
+        return Pair(hour, minute)
     }
 
     fun openGiftModal(gift: Gift) {
