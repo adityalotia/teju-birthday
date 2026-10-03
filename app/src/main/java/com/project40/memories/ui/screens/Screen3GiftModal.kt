@@ -525,20 +525,7 @@ fun GiftUnlockingModal(
                                 color = InkEspresso
                             )
 
-                            if (gift.id == 1) {
-                                Spacer(modifier = Modifier.height(10.dp))
-                                Image(
-                                    painter = painterResource(id = R.drawable.img_teju_portrait),
-                                    contentDescription = "Teju's Portrait",
-                                    contentScale = ContentScale.Crop,
-                                    modifier = Modifier
-                                        .fillMaxWidth()
-                                        .height(200.dp)
-                                        .clip(RoundedCornerShape(12.dp))
-                                )
-                            }
-
-                            Spacer(modifier = Modifier.height(8.dp))
+                            Spacer(modifier = Modifier.height(4.dp))
 
                             Text(
                                 text = gift.revealedDescription ?: gift.description,
