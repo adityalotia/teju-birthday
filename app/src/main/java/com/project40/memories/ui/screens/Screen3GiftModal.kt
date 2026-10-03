@@ -271,51 +271,7 @@ fun GiftUnlockingModal(
                         }
                     }
 
-                    Spacer(modifier = Modifier.height(14.dp))
 
-                    // Botanical Accent Photo Preview
-                    Box(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .height(130.dp)
-                            .clip(RoundedCornerShape(12.dp))
-                            .background(SurfaceContainer)
-                    ) {
-                        Image(
-                            painter = painterResource(id = R.drawable.img_teju_portrait),
-                            contentDescription = "Clue location",
-                            contentScale = ContentScale.Crop,
-                            modifier = Modifier.fillMaxSize()
-                        )
-                        Box(
-                            modifier = Modifier
-                                .fillMaxSize()
-                                .background(
-                                    Brush.verticalGradient(
-                                        colors = listOf(Color.Transparent, InkEspresso.copy(alpha = 0.7f))
-                                    )
-                                )
-                        )
-                        Row(
-                            modifier = Modifier
-                                .align(Alignment.BottomStart)
-                                .padding(10.dp),
-                            verticalAlignment = Alignment.CenterVertically
-                        ) {
-                            Icon(
-                                imageVector = Icons.Filled.Search,
-                                contentDescription = null,
-                                tint = AccentGold,
-                                modifier = Modifier.size(15.dp)
-                            )
-                            Spacer(modifier = Modifier.width(6.dp))
-                            Text(
-                                text = "Physical token marked with #${gift.id}",
-                                style = MaterialTheme.typography.bodySmall,
-                                color = CrispOffWhite
-                            )
-                        }
-                    }
                 }
             }
 
