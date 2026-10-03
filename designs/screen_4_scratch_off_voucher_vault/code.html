@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;background-color:#fbf9f5;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:max(env(safe-area-inset-bottom,0px),1rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "border-warm": "#E8DFD8", "surface-tint": "#934937", "tertiary": "#436254", "tertiary-fixed-dim": "#accebc", "surface-container": "#efeeea", "on-tertiary-fixed-variant": "#2e4d3f", "inverse-on-surface": "#f2f0ed", "background": "#fbf9f5", "outline": "#87736e", "surface-variant": "#e4e2de", "outline-variant": "#dac1bb", "error-container": "#ffdad6", "surface-ivory": "#F5EFEB", "on-surface-variant": "#54433f", "on-tertiary-container": "#f5fff7", "primary-container": "#ae5f4a", "ink-espresso": "#2A2421", "on-primary-container": "#fffbff", "inverse-primary": "#ffb4a2", "surface-dim": "#dbdad6", "surface-bright": "#fbf9f5", "on-primary-fixed-variant": "#753322", "on-error": "#ffffff", "tertiary-container": "#5b7b6c", "on-tertiary-fixed": "#012115", "on-surface": "#1b1c1a", "accent-gold": "#D4AF37", "on-secondary-container": "#7a473c", "on-background": "#1b1c1a", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#351008", "primary": "#904734", "inverse-surface": "#30312e", "primary-fixed": "#ffdbd2", "secondary-fixed-dim": "#fbb6a8", "on-tertiary": "#ffffff", "surface-container-highest": "#e4e2de", "error": "#ba1a1a", "on-primary": "#ffffff", "on-primary-fixed": "#3c0800", "on-error-container": "#93000a", "ink-charcoal": "#5A524D", "tertiary-fixed": "#c8ebd7", "surface": "#fbf9f5", "surface-container-low": "#f5f3ef", "primary-fixed-dim": "#ffb4a2", "secondary-fixed": "#ffdad3", "secondary": "#865045", "on-secondary": "#ffffff", "surface-elevated": "#FFFFFF", "secondary-container": "#feb8aa", "on-secondary-fixed-variant": "#6a392f", "surface-container-high": "#eae8e4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "gutter-tablet": "1.5rem", "space-sm": "0.5rem", "margin": "1.25rem", "space-md": "1rem", "space-xl": "2rem", "space-lg": "1.5rem", "margin-tablet": "2rem", "space-xs": "0.25rem" }, "fontFamily": { "display-hero-mobile": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "display-hero": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "title-editorial": ["Playfair Display"], "headline-lg": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"] }, "fontSize": { "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.3px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.5px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.4px", "fontWeight": "600" }], "title-editorial": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.2px", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "1.2px", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface text-ink-espresso font-body-md min-h-screen flex flex-col antialiased selection:bg-secondary-container selection:text-ink-espresso"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_2px_12px_rgba(42,36,33,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Project 40 Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VmusmVilBNn8d-BP34w-RmCVj7azlD-pc2aoHJXWnlMnCPaz9yVhwyvPTvqeodnUZ4fUJXJwFlYwtsNmCjmnUBvkqYK-vMqowr3X5G03QQH_mPJ9h7rInJv95G-V6qUirW68IYW2RixbRBuaS1wQx1ScO7rx_Ig4wPSJ9DWUh7-VHeJo4-c-nZrTZMvFg14z-rGsJmq6RwdoULgguZI3BISl22soaC7hIXmmOZzwaR7EEFqZsGQ7gFNNE2"/><div class="flex flex-col"><span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Project 40</span><span class="font-title-editorial text-title-editorial text-ink-espresso tracking-tight leading-none">Scratch Off Voucher Vault</span></div></div><a class="min-h-[44px] min-w-[44px] flex items-center justify-center p-0.5 rounded-full transition-transform active:scale-95" data-path="profile-surprise" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmi9vOCSXmCYaSMG0F6Imeh3yf14fvUF11YmdSQPsum0OtEWymTIVBzmre2hB_vH5SWehhqa3_LivKqHBX2SFNw-PxnT4edK5GgaK6JtX279tB2TD9uoosuL8c4WlzHDNuwO5cKPYcckyQWQu6z4cKF6Rm1Hs8rqsycekVXbzbPo5bWNGa-axjJETOLQ-BmtpppIwbT2GPLsRXBpI_Z_xaXiwsEv4kQBFyLGZh6-wuogNWdSrTvdrpkg"/></a></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full">
+<div class="px-margin pt-space-md pb-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Secret Keepsakes • 40th Edition</span>
+</div>
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-ink-espresso tracking-tight">The Voucher Vault</h1>
+<p class="font-body-md text-body-md text-ink-charcoal">Touch &amp; rub to scratch away the golden foil and reveal your passes.</p>
+<div class="mt-space-xs bg-surface-container-low p-space-sm rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-md text-label-md text-ink-espresso">3 Unscratched</span>
+</div>
+<span class="text-outline-variant font-body-sm text-body-sm">•</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]" style="font-variation-settings: 'FILL' 1;">redeem</span>
+<span class="font-label-md text-label-md text-ink-espresso">5 Available</span>
+</div>
+<span class="text-outline-variant font-body-sm text-body-sm">•</span>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-ink-charcoal text-[20px]">inventory_2</span>
+<span class="font-label-md text-label-md text-ink-charcoal">2 Redeemed</span>
+</div>
+</div>
+</div>
+<div class="px-margin flex flex-col gap-space-lg">
+<div class="relative w-full rounded-2xl bg-surface-elevated shadow-md overflow-hidden" id="voucher-card-1">
+<div class="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-surface z-20"></div>
+<div class="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-surface z-20"></div>
+<div class="p-space-md flex flex-col gap-space-sm relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase">Gift #14</span>
+<span class="font-title-editorial text-title-editorial text-ink-espresso">Morning Reverie</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded-full text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+<span id="scratch-percent-1">70% Scratched!</span>
+</div>
+</div>
+<div class="relative w-full h-36 rounded-xl overflow-hidden bg-surface-ivory shadow-inner select-none cursor-pointer" id="scratch-area-1">
+<div class="absolute inset-0 p-space-md flex flex-col justify-center items-center text-center bg-surface-ivory">
+<span class="material-symbols-outlined text-primary text-[28px] mb-1">bedtime</span>
+<h3 class="font-headline-sm text-headline-sm text-ink-espresso leading-snug">✨ One Guilt-Free Sleep-in Morning ✨</h3>
+<p class="font-body-sm text-body-sm text-ink-charcoal mt-1">(Kids, breakfast &amp; all morning chores 100% handled)</p>
+</div>
+<canvas class="absolute inset-0 w-full h-full z-10 touch-none" id="foil-canvas-1"></canvas>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-ink-charcoal uppercase tracking-wider">Perk Condition</span>
+<span class="font-body-sm text-body-sm text-ink-espresso">Valid on any Saturday or Sunday</span>
+</div>
+<button class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_4px_12px_rgba(189,107,86,0.25)] active:bg-primary-container transition-transform active:scale-95 flex items-center gap-1.5" id="redeem-btn-1">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+            Redeem Now
+          </button>
+</div>
+</div>
+</div>
+<div class="relative w-full rounded-2xl bg-surface-elevated shadow-md overflow-hidden" id="voucher-card-2">
+<div class="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-surface z-20"></div>
+<div class="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-surface z-20"></div>
+<div class="p-space-md flex flex-col gap-space-sm relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-caps text-label-caps uppercase">Gift #19</span>
+<span class="font-title-editorial text-title-editorial text-ink-espresso">Birthday Milestone Vault</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-ink-charcoal font-label-caps text-[10px] tracking-wider uppercase">Untouched</span>
+</div>
+<div class="relative w-full h-40 rounded-xl overflow-hidden shadow-inner select-none cursor-pointer" id="scratch-area-2">
+<div class="absolute inset-0 p-space-md flex flex-col justify-center items-center text-center bg-surface-ivory">
+<span class="material-symbols-outlined text-primary text-[28px] mb-1">spa</span>
+<h3 class="font-headline-sm text-headline-sm text-ink-espresso leading-snug">🌿 Sunset Spa Day &amp; Thermal Soak 🌿</h3>
+<p class="font-body-sm text-body-sm text-ink-charcoal mt-1">Full-body restorative retreat plus private botanical lounge</p>
+</div>
+<canvas class="absolute inset-0 w-full h-full z-10 touch-none" id="foil-canvas-2"></canvas>
+<div class="absolute inset-0 pointer-events-none z-10 flex flex-col items-center justify-center text-center p-space-md" id="unscratched-prompt-2">
+<div class="w-10 h-10 rounded-full bg-surface-elevated/40 backdrop-blur-md flex items-center justify-center text-ink-espresso mb-2 shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-[24px]">auto_fix_high</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-ink-espresso tracking-tight drop-shadow-sm">Rub surface to scratch &amp; reveal</p>
+<p class="font-label-caps text-[10px] text-ink-charcoal mt-0.5 uppercase tracking-widest">Secret Golden Foil Sealed</p>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-ink-charcoal">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span class="font-body-sm text-body-sm">Scratch 60% of foil to unlock card</span>
+</div>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-outline font-label-md text-label-md cursor-not-allowed opacity-75">
+            Locked
+          </button>
+</div>
+</div>
+</div>
+<div class="relative w-full rounded-2xl bg-surface-elevated shadow-md overflow-hidden">
+<div class="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-surface z-20"></div>
+<div class="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-surface z-20"></div>
+<div class="p-space-md flex flex-col gap-space-sm relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-caps text-label-caps uppercase">Gift #07</span>
+<span class="font-title-editorial text-title-editorial text-ink-espresso">Evening Calm</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            Ready to Claim
+          </span>
+</div>
+<div class="relative p-space-md rounded-xl bg-surface-ivory shadow-inner overflow-hidden flex flex-col justify-between min-h-[120px]">
+<div class="absolute right-3 top-2 rotate-[-12deg] pointer-events-none opacity-80">
+<div class="px-3 py-1 rounded bg-tertiary text-on-tertiary font-label-caps text-[11px] uppercase tracking-widest shadow-sm">
+              Verified
+            </div>
+</div>
+<div class="pr-12">
+<h3 class="font-headline-sm text-headline-sm text-ink-espresso">30-Minute Foot &amp; Shoulder Massage on Demand</h3>
+<p class="font-body-sm text-body-sm text-ink-charcoal mt-1">Redeemable anytime, zero expiration, valid immediately.</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center gap-space-xs text-tertiary">
+<span class="material-symbols-outlined text-[16px]">all_inclusive</span>
+<span class="font-label-caps text-[10px] tracking-wider uppercase">Unconditional love warranty</span>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-ink-charcoal uppercase tracking-wider">Bearer</span>
+<span class="font-body-sm text-body-sm text-ink-espresso">Teju (Beloved Birthday Queen)</span>
+</div>
+<button class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_4px_12px_rgba(189,107,86,0.25)] active:bg-primary-container transition-transform active:scale-95 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+            Activate Now
+          </button>
+</div>
+</div>
+</div>
+<div class="relative w-full rounded-2xl bg-surface-container shadow-sm overflow-hidden opacity-90">
+<div class="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-surface z-20"></div>
+<div class="absolute -right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-surface z-20"></div>
+<div class="p-space-md flex flex-col gap-space-sm relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-surface-variant text-ink-charcoal font-label-caps text-label-caps uppercase">Gift #03</span>
+<span class="font-title-editorial text-title-editorial text-ink-charcoal line-through">Quiet Escape</span>
+</div>
+<span class="font-label-caps text-[10px] text-outline uppercase tracking-wider">Archived Pass</span>
+</div>
+<div class="relative p-space-md rounded-xl bg-surface-container-high overflow-hidden min-h-[110px] flex flex-col justify-center">
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+<div class="px-4 py-1.5 rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-headline-sm tracking-wider uppercase rotate-[-8deg] shadow-md opacity-95">
+              REDEEMED ON 10:30 AM
+            </div>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-ink-charcoal/70">Solo Cafe Window &amp; Book Afternoon</h3>
+<p class="font-body-sm text-body-sm text-outline mt-1">Single-origin pour-over, cozy plush seat &amp; untouched reading hours.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-ink-charcoal">
+<span class="material-symbols-outlined text-[16px]">event_available</span>
+<span class="font-body-sm text-body-sm">Fulfilled at Blue Heron Bistro</span>
+</div>
+<span class="font-label-md text-label-md text-outline">Completed</span>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-ivory shadow-sm flex items-start gap-space-sm">
+<div class="p-2 rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-lg text-label-lg text-ink-espresso">Voucher Promise</span>
+<p class="font-body-sm text-body-sm text-ink-charcoal">
+          Every scratch pass is an irrevocable covenant crafted with deep love. Can be claimed sequentially or stockpiled for lazy rain afternoons.
+        </p>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initScratchCards() {
+    function setupScratchCanvas(canvasId, percentId, initialPercent, onThreshold) {
+      const canvas = document.getElementById(canvasId);
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      const rect = canvas.getBoundingClientRect();
+      
+      const width = canvas.parentElement.clientWidth || 320;
+      const height = canvas.parentElement.clientHeight || 144;
+      canvas.width = width;
+      canvas.height = height;
+
+      function renderFoil() {
+        const grad = ctx.createLinearGradient(0, 0, width, height);
+        grad.addColorStop(0, '#D4AF37');
+        grad.addColorStop(0.3, '#F5EFEB');
+        grad.addColorStop(0.6, '#C98A7D');
+        grad.addColorStop(0.85, '#D4AF37');
+        grad.addColorStop(1, '#AE5F4A');
+        
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, width, height);
+
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.25)';
+        for (let i = 0; i < 40; i++) {
+          const x = (i * 27) % width;
+          const y = (i * 19) % height;
+          ctx.beginPath();
+          ctx.arc(x, y, (i % 3) + 1, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+        ctx.lineWidth = 1;
+        for (let i = -width; i < width * 2; i += 24) {
+          ctx.beginPath();
+          ctx.moveTo(i, 0);
+          ctx.lineTo(i + 40, height);
+          ctx.stroke();
+        }
+      }
+
+      renderFoil();
+
+      if (initialPercent > 0) {
+        ctx.globalCompositeOperation = 'destination-out';
+        const centerW = width * 0.7;
+        const centerH = height * 0.7;
+        const startX = (width - centerW) / 2;
+        const startY = (height - centerH) / 2;
+        
+        for (let i = 0; i < 45; i++) {
+          const rx = startX + Math.random() * centerW;
+          const ry = startY + Math.random() * centerH;
+          const rad = 18 + Math.random() * 22;
+          ctx.beginPath();
+          ctx.arc(rx, ry, rad, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        ctx.globalCompositeOperation = 'source-over';
+      }
+
+      let isDrawing = false;
+      let lastX = 0;
+      let lastY = 0;
+
+      function getPos(e) {
+        const bounds = canvas.getBoundingClientRect();
+        const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+        const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+        return {
+          x: clientX - bounds.left,
+          y: clientY - bounds.top
+        };
+      }
+
+      function scratchAt(x, y) {
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.beginPath();
+        ctx.arc(x, y, 22, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.globalCompositeOperation = 'source-over';
+      }
+
+      function calculateScratched() {
+        try {
+          const imgData = ctx.getImageData(0, 0, width, height);
+          const pixels = imgData.data;
+          let transparentCount = 0;
+          const total = pixels.length / 4;
+          for (let i = 3; i < pixels.length; i += 16) {
+            if (pixels[i] === 0) transparentCount += 4;
+          }
+          const pct = Math.min(100, Math.round((transparentCount / total) * 100));
+          if (percentId) {
+            const pEl = document.getElementById(percentId);
+            if (pEl) pEl.innerText = pct + '% Scratched!';
+          }
+          if (onThreshold && pct >= 50) {
+            onThreshold(pct);
+          }
+        } catch(err) {}
+      }
+
+      function onPointerDown(e) {
+        isDrawing = true;
+        const pos = getPos(e);
+        scratchAt(pos.x, pos.y);
+      }
+
+      function onPointerMove(e) {
+        if (!isDrawing) return;
+        e.preventDefault();
+        const pos = getPos(e);
+        scratchAt(pos.x, pos.y);
+      }
+
+      function onPointerUp() {
+        if (!isDrawing) return;
+        isDrawing = false;
+        calculateScratched();
+      }
+
+      canvas.addEventListener('mousedown', onPointerDown);
+      window.addEventListener('mousemove', onPointerMove);
+      window.addEventListener('mouseup', onPointerUp);
+
+      canvas.addEventListener('touchstart', onPointerDown, { passive: false });
+      window.addEventListener('touchmove', onPointerMove, { passive: false });
+      window.addEventListener('touchend', onPointerUp);
+    }
+
+    setupScratchCanvas('foil-canvas-1', 'scratch-percent-1', 70, function() {});
+
+    setupScratchCanvas('foil-canvas-2', null, 0, function(pct) {
+      const prompt = document.getElementById('unscratched-prompt-2');
+      if (prompt) prompt.style.opacity = '0';
+      const card2 = document.getElementById('voucher-card-2');
+      if (card2 && pct >= 50) {
+        const btn = card2.querySelector('button');
+        if (btn && btn.innerText === 'Locked') {
+          btn.innerText = 'Redeem Now';
+          btn.className = 'px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_4px_12px_rgba(189,107,86,0.25)] active:bg-primary-container transition-transform active:scale-95 flex items-center gap-1.5';
+        }
+      }
+    });
+
+    const redeem1 = document.getElementById('redeem-btn-1');
+    if (redeem1) {
+      redeem1.addEventListener('click', function() {
+        this.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span> Claimed for Sunday';
+        this.classList.replace('bg-primary', 'bg-tertiary');
+      });
+    }
+  })();
+</script></main><div class="fixed bottom-3 inset-x-0 z-50 flex justify-center px-4 pointer-events-none"><nav class="pointer-events-auto w-full max-w-md bg-surface-elevated/95 backdrop-blur-xl rounded-full shadow-[0_8px_28px_rgba(42,36,33,0.08)] px-2 py-1.5 flex items-center justify-around" data-active-classes="text-primary font-semibold [&amp;_.nav-pill]:bg-secondary-container/50 [&amp;_.nav-pill]:text-primary"><a class="flex flex-col items-center justify-center min-h-[44px] min-w-[48px] py-1 text-ink-charcoal transition-all group" data-path="master-journey-hub" href="#"><div class="nav-pill px-3 py-0.5 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">card_giftcard</span></div><span class="font-label-caps text-[10px] mt-0.5 tracking-wider">Journey</span></a><a class="flex flex-col items-center justify-center min-h-[44px] min-w-[48px] py-1 text-ink-charcoal transition-all group" data-path="memory-lane" href="#"><div class="nav-pill px-3 py-0.5 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">photo_library</span></div><span class="font-label-caps text-[10px] mt-0.5 tracking-wider">Memories</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-h-[44px] min-w-[48px] py-1 transition-all group text-primary font-semibold [&amp;_.nav-pill]:bg-secondary-container/50 [&amp;_.nav-pill]:text-primary" data-path="scratch-off-voucher-vault" href="#"><div class="nav-pill px-3 py-0.5 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">confirmation_number</span></div><span class="font-label-caps text-[10px] mt-0.5 tracking-wider">Vouchers</span></a><a class="flex flex-col items-center justify-center min-h-[44px] min-w-[48px] py-1 text-ink-charcoal transition-all group" data-path="love-testimonial-archive" href="#"><div class="nav-pill px-3 py-0.5 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">auto_stories</span></div><span class="font-label-caps text-[10px] mt-0.5 tracking-wider">Archive</span></a><a class="flex flex-col items-center justify-center min-h-[44px] min-w-[48px] py-1 text-ink-charcoal transition-all group" data-path="profile-surprise" href="#"><div class="nav-pill px-3 py-0.5 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">featured_seasonal_and_gifts</span></div><span class="font-label-caps text-[10px] mt-0.5 tracking-wider">Surprise</span></a></nav></div></body></html>

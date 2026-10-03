@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;min-height:100%;margin:0;padding:0;background-color:#fbf9f5;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:max(env(safe-area-inset-bottom,0px),1rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "border-warm": "#E8DFD8", "surface-tint": "#934937", "tertiary": "#436254", "tertiary-fixed-dim": "#accebc", "surface-container": "#efeeea", "on-tertiary-fixed-variant": "#2e4d3f", "inverse-on-surface": "#f2f0ed", "background": "#fbf9f5", "outline": "#87736e", "surface-variant": "#e4e2de", "outline-variant": "#dac1bb", "error-container": "#ffdad6", "surface-ivory": "#F5EFEB", "on-surface-variant": "#54433f", "on-tertiary-container": "#f5fff7", "primary-container": "#ae5f4a", "ink-espresso": "#2A2421", "on-primary-container": "#fffbff", "inverse-primary": "#ffb4a2", "surface-dim": "#dbdad6", "surface-bright": "#fbf9f5", "on-primary-fixed-variant": "#753322", "on-error": "#ffffff", "tertiary-container": "#5b7b6c", "on-tertiary-fixed": "#012115", "on-surface": "#1b1c1a", "accent-gold": "#D4AF37", "on-secondary-container": "#7a473c", "on-background": "#1b1c1a", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#351008", "primary": "#904734", "inverse-surface": "#30312e", "primary-fixed": "#ffdbd2", "secondary-fixed-dim": "#fbb6a8", "on-tertiary": "#ffffff", "surface-container-highest": "#e4e2de", "error": "#ba1a1a", "on-primary": "#ffffff", "on-primary-fixed": "#3c0800", "on-error-container": "#93000a", "ink-charcoal": "#5A524D", "tertiary-fixed": "#c8ebd7", "surface": "#fbf9f5", "surface-container-low": "#f5f3ef", "primary-fixed-dim": "#ffb4a2", "secondary-fixed": "#ffdad3", "secondary": "#865045", "on-secondary": "#ffffff", "surface-elevated": "#FFFFFF", "secondary-container": "#feb8aa", "on-secondary-fixed-variant": "#6a392f", "surface-container-high": "#eae8e4" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "gutter-tablet": "1.5rem", "space-sm": "0.5rem", "margin": "1.25rem", "space-md": "1rem", "space-xl": "2rem", "space-lg": "1.5rem", "margin-tablet": "2rem", "space-xs": "0.25rem" }, "fontFamily": { "display-hero-mobile": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "display-hero": ["Playfair Display"], "label-md": ["Plus Jakarta Sans"], "title-editorial": ["Playfair Display"], "headline-lg": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "headline-md": ["Playfair Display"] }, "fontSize": { "display-hero-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.3px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.5px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.4px", "fontWeight": "600" }], "title-editorial": ["16px", { "lineHeight": "22px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.2px", "fontWeight": "600" }], "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "1.2px", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "500" }] } } } };</script></head><body class="bg-surface text-ink-espresso font-body-md min-h-screen flex flex-col antialiased selection:bg-secondary-container selection:text-ink-espresso"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_2px_12px_rgba(42,36,33,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Project 40 Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VmusmVilBNn8d-BP34w-RmCVj7azlD-pc2aoHJXWnlMnCPaz9yVhwyvPTvqeodnUZ4fUJXJwFlYwtsNmCjmnUBvkqYK-vMqowr3X5G03QQH_mPJ9h7rInJv95G-V6qUirW68IYW2RixbRBuaS1wQx1ScO7rx_Ig4wPSJ9DWUh7-VHeJo4-c-nZrTZMvFg14z-rGsJmq6RwdoULgguZI3BISl22soaC7hIXmmOZzwaR7EEFqZsGQ7gFNNE2"/><div class="flex flex-col"><span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Project 40</span><span class="font-title-editorial text-title-editorial text-ink-espresso tracking-tight leading-none">Love &amp; Testimonial Archive</span></div></div><a class="min-h-[44px] min-w-[44px] flex items-center justify-center p-0.5 rounded-full transition-transform active:scale-95" data-path="profile-surprise" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmi9vOCSXmCYaSMG0F6Imeh3yf14fvUF11YmdSQPsum0OtEWymTIVBzmre2hB_vH5SWehhqa3_LivKqHBX2SFNw-PxnT4edK5GgaK6JtX279tB2TD9uoosuL8c4WlzHDNuwO5cKPYcckyQWQu6z4cKF6Rm1Hs8rqsycekVXbzbPo5bWNGa-axjJETOLQ-BmtpppIwbT2GPLsRXBpI_Z_xaXiwsEv4kQBFyLGZh6-wuogNWdSrTvdrpkg"/></a></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Archival Intro Section -->
+<section class="px-margin pt-2 pb-space-sm flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Keepsake Volume V</span>
+<span class="w-1.5 h-1.5 rounded-full bg-accent-gold"></span>
+<span class="font-label-caps text-label-caps text-tertiary tracking-wider">Milestone 40</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-ink-espresso tracking-tight">Love &amp; Testimonial Archive</h1>
+<p class="font-body-md text-body-md text-ink-charcoal">Words, wishes, and 40 reasons why you light up the world.</p>
+</section>
+<!-- M3 Segmented Capsule Navigation -->
+<div class="px-margin py-2 sticky top-16 z-30 bg-surface/90 backdrop-blur-md">
+<div class="bg-surface-container-high p-1 rounded-full flex items-center justify-between shadow-sm" role="tablist">
+<button aria-selected="true" class="flex-1 py-2 px-2 rounded-full font-label-md text-label-md text-center transition-all duration-300 bg-surface-elevated text-primary shadow-sm" id="tab-btn-1" onclick="switchArchiveTab('tab-reasons')" role="tab">
+        40 Reasons
+      </button>
+<button aria-selected="false" class="flex-1 py-2 px-2 rounded-full font-label-md text-label-md text-center transition-all duration-300 text-ink-charcoal hover:text-ink-espresso" id="tab-btn-2" onclick="switchArchiveTab('tab-family')" role="tab">
+        Family &amp; Friends
+      </button>
+<button aria-selected="false" class="flex-1 py-2 px-2 rounded-full font-label-md text-label-md text-center transition-all duration-300 text-ink-charcoal hover:text-ink-espresso" id="tab-btn-3" onclick="switchArchiveTab('tab-bucket')" role="tab">
+        Bucket List
+      </button>
+</div>
+</div>
+<!-- TAB 1: 40 Reasons I Love You -->
+<div class="tab-pane flex flex-col px-margin pt-4 pb-space-md gap-space-lg" id="tab-reasons">
+<!-- Card Deck Area -->
+<div class="relative w-full pt-3 pb-2 flex flex-col items-center">
+<!-- Background Stack Deck Sheet 2 -->
+<div class="absolute inset-x-5 top-0 h-44 bg-surface-container rounded-2xl shadow-sm rotate-2 opacity-60"></div>
+<!-- Background Stack Deck Sheet 1 -->
+<div class="absolute inset-x-2.5 top-1.5 h-48 bg-surface-container-high rounded-2xl shadow-sm -rotate-1 opacity-85"></div>
+<!-- Active Deckled Card -->
+<div class="relative w-full bg-surface-container-lowest rounded-2xl shadow-md p-6 flex flex-col justify-between transition-transform duration-300 transform select-none" id="deck-card" style="min-height: 290px;">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase" id="card-counter">Reason #14 of 40</span>
+</div>
+<button aria-label="Favorite reason" class="w-9 h-9 rounded-full bg-surface-container-low flex items-center justify-center transition-all active:scale-90" id="heart-btn" onclick="toggleHeart()">
+<span class="material-symbols-outlined text-[20px] text-primary" id="heart-icon" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="py-4 my-auto">
+<p class="font-title-editorial text-headline-sm text-ink-espresso leading-relaxed italic text-center" id="card-quote">
+            “The quiet grace with which you listen to Reyansh’s wild bedtime stories, never rushing his imagination.”
+          </p>
+</div>
+<div class="pt-3 flex items-center justify-between bg-surface-container-lowest">
+<span class="font-label-caps text-[10px] text-ink-charcoal uppercase tracking-wider">Handpicked Memory</span>
+<div class="flex items-center gap-1.5 text-primary">
+<span class="font-label-caps text-[11px] font-semibold tracking-wide">Swipe</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro Navigation & Actions -->
+<div class="flex items-center justify-between px-1">
+<button class="flex items-center gap-1 py-1.5 px-3 rounded-full bg-surface-container-low text-ink-espresso font-label-md text-label-md active:scale-95 transition-all" onclick="navigateCard(-1)">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+<span>Prev</span>
+</button>
+<!-- Dots Indicators -->
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-variant"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-variant"></span>
+<span class="w-6 h-1.5 rounded-full bg-primary transition-all"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-variant"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-variant"></span>
+</div>
+<button class="flex items-center gap-1 py-1.5 px-3 rounded-full bg-surface-container-low text-ink-espresso font-label-md text-label-md active:scale-95 transition-all" onclick="navigateCard(1)">
+<span>Next</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<!-- Secondary Action Sheet Button -->
+<div class="w-full flex justify-center pt-1">
+<button class="w-full py-3 px-4 rounded-full bg-surface-container-high text-ink-espresso font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-sm active:scale-98 transition-all" onclick="openListView()">
+<span class="material-symbols-outlined text-[20px] text-secondary">view_agenda</span>
+<span>View All 40 as Literary Scroll</span>
+</button>
+</div>
+<!-- Editorial Accent Quote -->
+<div class="bg-surface-container-low p-5 rounded-2xl flex flex-col gap-2 mt-2 shadow-sm">
+<div class="flex items-center gap-2 text-tertiary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Archivist Note</span>
+</div>
+<p class="font-body-sm text-body-sm text-ink-charcoal leading-relaxed">
+        Collected over four seasons, from whispered morning reflections to handwritten sticky notes folded into vintage envelopes.
+      </p>
+</div>
+</div>
+<!-- TAB 2: Family & Friends (Tributes & Videos) -->
+<div class="tab-pane flex flex-col px-margin pt-4 pb-space-md gap-space-md" id="tab-family">
+<!-- Video Tribute Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 shadow-md flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase">Video Tribute</span>
+</div>
+<span class="bg-surface-container px-2 py-0.5 rounded-full font-label-caps text-[10px] text-ink-charcoal">2:15 min</span>
+</div>
+<!-- Video Thumbnail with Play Trigger -->
+<div class="relative w-full h-48 rounded-xl overflow-hidden shadow-sm flex items-center justify-center group cursor-pointer">
+<img class="w-full h-full object-cover" data-alt="Warm golden hour documentary still of an elderly smiling couple holding hands in a sunlit veranda with potted orchids, soft sepia warmth, nostalgia, cinematic documentary style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_rk4by49LtAA4pkGjXAP7osJM8I3fv3NdzYVT5hE8MA3XW_cFoLyJupah1vF5oy5dPfEC4AYHr0Mk7GllogV-UrlwJIqARwGMOXhv1pjGSCzcepeyRBhqWwVrTe75_tDnTZIJNixhPGbndzo2H3ov6-KcJ4qtYao_V4R8HTDaWs9An9sVuW2GAi5DgDX0Dd-CzqftarLj1Uo897KYRm6aITVOg_b8ikyMfiuSvMuqVb1MOhaMDFe3cw"/>
+<div class="absolute inset-0 bg-ink-espresso/35 backdrop-blur-[1px] flex items-center justify-center group-active:scale-95 transition-all">
+<div class="w-14 h-14 rounded-full bg-surface-elevated/90 text-primary flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[32px] ml-1" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-3 left-3 bg-surface-elevated/90 px-2.5 py-1 rounded-full text-ink-espresso font-label-caps text-[10px] uppercase tracking-wider backdrop-blur-sm shadow-sm">
+          Mom &amp; Dad
+        </div>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-ink-espresso">A Toast to Our Little Wonder</h2>
+<p class="font-body-sm text-body-sm text-ink-charcoal mt-0.5">“Forty years ago, you walked into our lives and turned our modest home into a palace of stories.”</p>
+</div>
+</div>
+<!-- Written Snippet: Ananya & Maya -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-md flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full overflow-hidden shadow-sm flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Two cheerful young adult sisters embracing lovingly at an outdoor cafe with natural soft lighting, linen dresses, terracotta tones, genuine laughing expressions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRHkfl5aSm89sLVIC6li6WG--eWhhKySzHUhrspQAHMvKoqwNHPxShcYxELc3wr6sd83Bv5UdwBGrTRro80kvSSo8fKFMkeiJAlRQqylCtoN8JO7rUsm8_G3xlXGfkUnM3BdkldlKkkrMOvmjUIQL0XRdsNVFzWNBMUnQDA4kdT2T7WN5RCzhjt9LxwumMaIzas62fG5ZweTeHyh49G4vWa619x7A5Y0gDUA-PhreSekxgo9R20uhL-g"/>
+</div>
+<div class="flex flex-col">
+<span class="font-title-editorial text-title-editorial text-ink-espresso">Ananya &amp; Maya</span>
+<span class="font-label-caps text-[10px] text-secondary tracking-widest uppercase">Lifelong Soulmates</span>
+</div>
+</div>
+<div class="relative bg-surface-container-low p-4 rounded-xl">
+<span class="material-symbols-outlined text-[28px] text-secondary-container absolute top-2 right-2 opacity-50" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="font-body-md text-body-md text-ink-espresso italic relative z-10 leading-relaxed">
+          “Through college all-nighters, midnight train rides, and spontaneous road trips without GPS—you have always been our north star. We love your relentless kindness.”
+        </p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-caps text-[10px] text-ink-charcoal">Written on October 12, 2024</span>
+<button class="font-label-caps text-label-caps text-primary tracking-wider uppercase flex items-center gap-1 hover:underline">
+          Read Full Letter
+          <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Written Snippet: The London Clan -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-md flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full overflow-hidden shadow-sm flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Warm intimate candid portrait of a group of cousins laughing together around an autumnal dinner table, warm ambient candles, rustic wood, cozy knit sweaters" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1JCEhtiEo-XWZTKpxRdEiTc8l6QcdBqNtbm2OqOQQkhEP-OmjfUIEPdR2x96-er4VN4JCJMQe3L1AQjp4yHAU4_p7-CweRzTX2sUjkCalzfLUSk0PApqIKEXYC5cGJn2L2lZleE2slehzq6tiI6c3BW6qsiT8D9UVfvh0Co-kJSqkrvKdjwz7wK6nnJ8myv3qEX9OF-nXFeKSV-aucvIM3wqEAzPP1qzekxe3MQx5vvvufaQ4G51m4w"/>
+</div>
+<div class="flex flex-col">
+<span class="font-title-editorial text-title-editorial text-ink-espresso">The London Clan</span>
+<span class="font-label-caps text-[10px] text-tertiary tracking-widest uppercase">Overseas Cousins</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-ink-espresso italic leading-relaxed">
+        “Sending love across two oceans. Here is to 40 more years of unstoppable laughter, spicy Chai debates, and summer garden reunions!”
+      </p>
+</div>
+</div>
+<!-- TAB 3: The 40 Bucket List -->
+<div class="tab-pane flex flex-col px-margin pt-4 pb-space-md gap-space-md" id="tab-bucket">
+<!-- Progress Indicator Summary -->
+<div class="bg-surface-container-high p-4 rounded-2xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-wider">Milestone Aspirations</span>
+<span class="font-headline-sm text-headline-sm text-ink-espresso">12 of 40 Dreams Fulfilled</span>
+</div>
+<div class="relative w-12 h-12 flex items-center justify-center">
+<!-- Circular Progress Ring SVG -->
+<svg class="w-12 h-12 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-variant" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-tertiary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="30, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-caps text-[11px] font-bold text-ink-espresso">30%</span>
+</div>
+</div>
+<!-- Checklist Container -->
+<div class="flex flex-col gap-2.5">
+<!-- Item 1: Completed -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex items-start gap-3 transition-colors">
+<button aria-label="Toggle item" class="mt-0.5 w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center flex-shrink-0 transition-transform active:scale-90" onclick="toggleCheck(this)">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<div class="flex-1 flex flex-col">
+<span class="font-title-editorial text-title-editorial text-ink-espresso line-through opacity-70">Sunrise hot air balloon over Cappadocia</span>
+<span class="font-body-sm text-body-sm text-ink-charcoal mt-0.5">Completed together • May 2023 in Turkey</span>
+</div>
+</div>
+<!-- Item 2: Uncompleted -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex items-start gap-3 transition-colors">
+<button aria-label="Toggle item" class="mt-0.5 w-6 h-6 rounded-full bg-surface-container-high text-transparent flex items-center justify-center flex-shrink-0 transition-transform active:scale-90" onclick="toggleCheck(this)">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<div class="flex-1 flex flex-col">
+<span class="font-title-editorial text-title-editorial text-ink-espresso">Learn pottery together in Kyoto</span>
+<span class="font-body-sm text-body-sm text-ink-charcoal mt-0.5">Target: Spring Cherry Blossom Season</span>
+</div>
+</div>
+<!-- Item 3: Uncompleted -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex items-start gap-3 transition-colors">
+<button aria-label="Toggle item" class="mt-0.5 w-6 h-6 rounded-full bg-surface-container-high text-transparent flex items-center justify-center flex-shrink-0 transition-transform active:scale-90" onclick="toggleCheck(this)">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<div class="flex-1 flex flex-col">
+<span class="font-title-editorial text-title-editorial text-ink-espresso">Weekend cabin retreat with zero phones</span>
+<span class="font-body-sm text-body-sm text-ink-charcoal mt-0.5">Scottish Highlands or Lake District cozy hearth</span>
+</div>
+</div>
+<!-- Item 4: Completed -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex items-start gap-3 transition-colors">
+<button aria-label="Toggle item" class="mt-0.5 w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center flex-shrink-0 transition-transform active:scale-90" onclick="toggleCheck(this)">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<div class="flex-1 flex flex-col">
+<span class="font-title-editorial text-title-editorial text-ink-espresso line-through opacity-70">Adopt a rescue pup to complete our triad</span>
+<span class="font-body-sm text-body-sm text-ink-charcoal mt-0.5">Welcomed little ‘Kulfi’ • August 2021</span>
+</div>
+</div>
+<!-- Item 5: Uncompleted -->
+<div class="bg-surface-container-lowest p-4 rounded-2xl shadow-sm flex items-start gap-3 transition-colors">
+<button aria-label="Toggle item" class="mt-0.5 w-6 h-6 rounded-full bg-surface-container-high text-transparent flex items-center justify-center flex-shrink-0 transition-transform active:scale-90" onclick="toggleCheck(this)">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</button>
+<div class="flex-1 flex flex-col">
+<span class="font-title-editorial text-title-editorial text-ink-espresso">Plant 40 native trees in the family orchard</span>
+<span class="font-body-sm text-body-sm text-ink-charcoal mt-0.5">Rooting our legacy for the next generation</span>
+</div>
+</div>
+</div>
+<!-- Add Wish Button -->
+<button class="w-full py-3.5 px-4 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 shadow-md active:bg-primary-container transition-all">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Add to Our 40 Bucket List</span>
+</button>
+</div>
+<!-- Modal / Full Scroll Sheet Overlay (Simulated list view) -->
+<div class="fixed inset-0 z-50 bg-ink-espresso/40 backdrop-blur-sm hidden flex-col justify-end" id="reasons-modal">
+<div class="bg-surface rounded-t-3xl max-h-[85vh] flex flex-col shadow-2xl overflow-hidden animate-in slide-in-from-bottom duration-300">
+<div class="p-4 bg-surface-container flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-primary tracking-widest uppercase">Complete Compendium</span>
+<h3 class="font-headline-sm text-headline-sm text-ink-espresso">The 40 Reasons</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-variant flex items-center justify-center text-ink-espresso" onclick="closeListView()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="overflow-y-auto p-margin flex flex-col gap-3">
+<div class="p-3 bg-surface-container-lowest rounded-xl">
+<span class="font-label-caps text-[10px] text-primary">#1</span>
+<p class="font-title-editorial text-title-editorial text-ink-espresso mt-0.5">“Your warm laughter when making breakfast on Sunday mornings.”</p>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-xl">
+<span class="font-label-caps text-[10px] text-primary">#2</span>
+<p class="font-title-editorial text-title-editorial text-ink-espresso mt-0.5">“How you never fail to hold my hand when crossing old cobble streets.”</p>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-xl">
+<span class="font-label-caps text-[10px] text-primary">#14</span>
+<p class="font-title-editorial text-title-editorial text-ink-espresso mt-0.5">“The quiet grace with which you listen to Reyansh’s wild bedtime stories, never rushing his imagination.”</p>
+</div>
+<div class="p-3 bg-surface-container-lowest rounded-xl">
+<span class="font-label-caps text-[10px] text-primary">#40</span>
+<p class="font-title-editorial text-title-editorial text-ink-espresso mt-0.5">“That you make every ordinary day feel like a handcrafted celebration.”</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Tab Switching Logic
+  function switchArchiveTab(tabId) {
+    const tabs = ['tab-reasons', 'tab-family', 'tab-bucket'];
+    tabs.forEach((id, index) => {
+      const pane = document.getElementById(id);
+      const btn = document.getElementById(`tab-btn-${index + 1}`);
+      if (id === tabId) {
+        pane.classList.remove('hidden');
+        btn.classList.remove('text-ink-charcoal');
+        btn.classList.add('bg-surface-elevated', 'text-primary', 'shadow-sm');
+        btn.setAttribute('aria-selected', 'true');
+      } else {
+        pane.classList.add('hidden');
+        btn.classList.remove('bg-surface-elevated', 'text-primary', 'shadow-sm');
+        btn.classList.add('text-ink-charcoal');
+        btn.setAttribute('aria-selected', 'false');
+      }
+    });
+  }
+
+  // Pre-seed tabs: Tab 1 active
+  document.addEventListener('DOMContentLoaded', () => {
+    switchArchiveTab('tab-reasons');
+  });
+
+  // Card Content Data & Navigation
+  const reasons = [
+    { num: 13, text: "The way you hum unreleased melodies while tending to your terrace balcony garden." },
+    { num: 14, text: "The quiet grace with which you listen to Reyansh’s wild bedtime stories, never rushing his imagination." },
+    { num: 15, text: "Your unconditional patience whenever I obsessively organize our travel maps by hand." }
+  ];
+  let currentIdx = 1;
+
+  function updateCard() {
+    const cardQuote = document.getElementById('card-quote');
+    const cardCounter = document.getElementById('card-counter');
+    const deckCard = document.getElementById('deck-card');
+
+    deckCard.classList.add('scale-95', 'opacity-70');
+    setTimeout(() => {
+      cardQuote.innerHTML = `&ldquo;${reasons[currentIdx].text}&rdquo;`;
+      cardCounter.innerText = `Reason #${reasons[currentIdx].num} of 40`;
+      deckCard.classList.remove('scale-95', 'opacity-70');
+    }, 150);
+  }
+
+  function navigateCard(direction) {
+    currentIdx = (currentIdx + direction + reasons.length) % reasons.length;
+    updateCard();
+  }
+
+  // Heart Favorite Toggle
+  let isHearted = true;
+  function toggleHeart() {
+    isHearted = !isHearted;
+    const heartIcon = document.getElementById('heart-icon');
+    if (isHearted) {
+      heartIcon.style.fontVariationSettings = "'FILL' 1";
+      heartIcon.classList.remove('text-ink-charcoal');
+      heartIcon.classList.add('text-primary');
+    } else {
+      heartIcon.style.fontVariationSettings = "'FILL' 0";
+      heartIcon.classList.remove('text-primary');
+      heartIcon.classList.add('text-ink-charcoal');
+    }
+  }
+
+  // Bucket List Toggle Checkbox
+  function toggleCheck(button) {
+    const isChecked = button.classList.contains('bg-tertiary');
+    const textSpan = button.nextElementSibling.querySelector('span:first-child');
+    if (isChecked) {
+      button.classList.remove('bg-tertiary', 'text-on-tertiary');
+      button.classList.add('bg-surface-container-high', 'text-transparent');
+      textSpan.classList.remove('line-through', 'opacity-70');
+    } else {
+      button.classList.remove('bg-surface-container-high', 'text-transparent');
+      button.classList.add('bg-tertiary', 'text-on-tertiary');
+      textSpan.classList.add('line-through', 'opacity-70');
+    }
+  }
+
+  // List View Modal Controls
+  function openListView() {
+    const modal = document.getElementById('reasons-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeListView() {
+    const modal = document.getElementById('reasons-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+</script></main><div class="fixed bottom-3 inset-x-0 z-50 flex justify-center px-4 pointer-events-none"><nav class="pointer-events-auto w-full max-w-md bg-surface-elevated/95 backdrop-blur-xl rounded-full shadow-[0_8px_28px_rgba(42,36,33,0.08)] px-2 py-1.5 flex items-center justify-around" data-active-classes="text-primary font-semibold [&amp;_.nav-pill]:bg-secondary-container/50 [&amp;_.nav-pill]:text-primary"><a class="flex flex-col items-center justify-center min-h-[44px] min-w-[48px] py-1 text-ink-charcoal transition-all group" data-path="master-journey-hub" href="#"><div class="nav-pill px-3 py-0.5 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">card_giftcard</span></div><span class="font-label-caps text-[10px] mt-0.5 tracking-wider">Journey</span></a><a class="flex flex-col items-center justify-center min-h-[44px] min-w-[48px] py-1 text-ink-charcoal transition-all group" data-path="memory-lane" href="#"><div class="nav-pill px-3 py-0.5 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">photo_library</span></div><span class="font-label-caps text-[10px] mt-0.5 tracking-wider">Memories</span></a><a class="flex flex-col items-center justify-center min-h-[44px] min-w-[48px] py-1 text-ink-charcoal transition-all group" data-path="scratch-off-voucher-vault" href="#"><div class="nav-pill px-3 py-0.5 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">confirmation_number</span></div><span class="font-label-caps text-[10px] mt-0.5 tracking-wider">Vouchers</span></a><a class="flex flex-col items-center justify-center min-h-[44px] min-w-[48px] py-1 text-ink-charcoal transition-all group" data-path="love-testimonial-archive" href="#"><div class="nav-pill px-3 py-0.5 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">auto_stories</span></div><span class="font-label-caps text-[10px] mt-0.5 tracking-wider">Archive</span></a><a class="flex flex-col items-center justify-center min-h-[44px] min-w-[48px] py-1 text-ink-charcoal transition-all group" data-path="profile-surprise" href="#"><div class="nav-pill px-3 py-0.5 rounded-full flex items-center justify-center transition-colors"><span class="material-symbols-outlined text-[22px]">featured_seasonal_and_gifts</span></div><span class="font-label-caps text-[10px] mt-0.5 tracking-wider">Surprise</span></a></nav></div></body></html>
